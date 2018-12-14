@@ -33,10 +33,25 @@
                   "no": "Tema"},
       "preset": "multiple_checkbox",
       "choices":[
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/SOCI", "label": {"en": "Population and society", "no": "Befolkning og samfunn"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/ENER", "label": {"en": "Energy", "no": "Energi"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/GOVE", "label": {"en": "Government and public sector", "no": "Forvaltning og offentlig sektor"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/HEAL", "label": {"en": "Health", "no": "Helse"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/INTR", "label": {"en": "International issues", "no": "Internasjonale temaer"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/AGRI", "label": {"en": "Agriculture, fisheries, forestry and food", "no": "Jordbruk, fiskeri, skogbruk og mat"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/JUST", "label": {"en": "Justice, legal system and public safety", "no": "Justis, rettssystem og allmenn sikkerhet"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/ENVI", "label": {"en": "Environment", "no": "Miljø"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/REGI", "label": {"en": "Regions and cities", "no": "Regioner og byer"}},
            {"value": "http://publications.europa.eu/resource/authority/data-theme/TRAN", "label": {"en": "Transport", "no": "Transport"}},
-           {"value": "http://publications.europa.eu/resource/authority/data-theme/ENVI", "label": {"en": "Environment", "no": "Miljø"}}
-       ]      
-    },    
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/EDUC", "label": {"en": "Education, culture and sport", "no": "Utdanning, kultur og sport"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/TECH", "label": {"en": "Science and technology", "no": "Vitenskap og teknologi"}},
+           {"value": "http://publications.europa.eu/resource/authority/data-theme/ECON", "label": {"en": "Economy and finance", "no": "Økonomi og finans"}}
+       ],
+       "help_text": {
+          "en":"Select one or two topics that are most descriptive of the dataset.",
+          "no":"Velg et eller to tema som er mest beskrivende for datasettet."
+         }
+    },
     { "dcat_ap_no_comment": "dct:publisher <=================== check this w/profiles.py",
       "field_name": "owner_org",
       "label": "Organization",
@@ -54,7 +69,7 @@
       "label": "Author Email",
       "form_placeholder": "joe@example.com",
       "display_snippet": "email.html",
-      "display_email_name_field": "author", 
+      "display_email_name_field": "author",
       "help_text": "Testing! Help inline = true.",
       "help_inline" : "true"
     },
@@ -85,7 +100,7 @@
       "choices":[
            {"value": "http://publications.europa.eu/resource/authority/access-right/PUBLIC", "label": "public"},
            {"value": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED", "label": "restricted"},
-           {"value": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC", "label": "non-public"}           
+           {"value": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC", "label": "non-public"}
        ],
        "help_text": "PUBLIC: Publicly accessible by everyone. Usage note: Permissible obstacles include registration and request for API keys, as long as anyone can request such registration and/or API keys. RESTRICTED: Only available under certain conditions. Usage note: This category may include resources that require payment, resources shared under non-disclosure agreements, resources for which the publisher or owner has not yet decided if they can be publicly released. NON-PUBLIC: Not publicly accessible for privacy, security or other reasons. Usage note: This category may include resources that contain sensitive or personal information."
     },
@@ -97,7 +112,7 @@
                             "no": "Lenke til relevant paragraf i Lovdata"},
       "display_snippet": "link.html",
       "help_text": "If 'access rights' is 'restricted' or 'non-public', use this field to refer to the legal basis for restricting access to the data."
-    },    
+    },
     { "dcat_ap_no_comment": "dct:subject",
       "field_name": "subject",
       "label": { "en": "Subject",
@@ -132,7 +147,7 @@
                   "no": "Frekvens"},
       "form_placeholder": { "en": "Selection list to be inserted <=======================",
                             "no": "Her skal vi ha en valgliste <======================="}
-    },    
+    },
      { "dcat_ap_no_comment": "dcat:landingPage",
       "field_name": "url",
       "label": "Source",
@@ -161,7 +176,7 @@
                             "no": "noe"},
       "help_text": {    "en": "Secondary identifier, like MAST/ADS, DataCite, DOI, EZID, or  W3ID.",
                         "no": "SReferanse til en sekundær identifikator, som MAST/ADS, DataCite, DOI, EZID eller W3ID."}
-    },    
+    },
     { "dcat_ap_no_comment": "dct:provenance",
       "field_name": "provenance",
       "label": { "en": "Provenance",
@@ -192,7 +207,7 @@
            {"value": "http://sws.geonames.org/3137400/", "label": {"en": "Sør-Trøndelag", "no": "Sør-Trøndelag"}}
            ],
       "help_text": {    "en": "Geographical area covered by the dataset",
-                        "no": "Geografisk område dekket av datasettet"}                        
+                        "no": "Geografisk område dekket av datasettet"}
     },
     { "dcat_ap_no_comment": "dct:temporal - start date",
       "field_name": "temporal_start",
@@ -216,7 +231,7 @@
       "help_text": {    "en": "When the dataset was last updated",
                         "no": "Dato for siste oppdatering av datasettet"},
       "preset": "date"
-    },  
+    },
     { "dcat_ap_no_comment": "owl:versionInfo",
       "field_name": "version",
       "label": "Version",
@@ -229,14 +244,14 @@
                   "no": "Notater om versjonen"},
       "form_placeholder": { "en": "The difference between this version and the previous one of the dataset",
                             "no": "Forskjellen mellom denne og forrige versjon av datasettet"}
-    },      
+    },
     { "dcat_ap_no_comment": "dct:creator",
       "field_name": "creator",
       "label": { "en": "Creator",
                   "no": "Skaper"},
       "help_text": {    "en": "Creator of the data set.",
                         "no": "Skaperen av av datasettet."}
-    },    
+    },
     { "dcat_ap_no_comment": "dct:isPartOf",
       "field_name": "is_part_of",
       "label": { "en": "Is part of",
@@ -244,7 +259,7 @@
       "help_text": {    "en": "Dataset which this dataset is a part of",
                         "no": "Datasett som dette datasettet er en del av"},
       "display_snippet": "link.html"
-    }, 
+    },
     { "dcat_ap_no_comment": "dct:hasPart",
       "field_name": "has_part",
       "label": { "en": "Has part",
@@ -252,7 +267,7 @@
       "help_text": {    "en": "Dataset which has part of this dataset",
                         "no": "Datasett som er en del av dette datasettet"},
       "display_snippet": "link.html"
-    }, 
+    },
     { "dcat_ap_no_comment": "dct:license. NB! This is a CKAN field on dataset level. In DCAT-AP-NO, this is only given for catalogue and for distribution  <=== check this with profiles.py",
       "field_name": "license_id",
       "label": "License",
