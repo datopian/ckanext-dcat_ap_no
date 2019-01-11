@@ -204,11 +204,24 @@
       "preset": "multiple_checkbox",
       "choices":[
            {"value": "http://sws.geonames.org/3144096/", "label": {"en": "Norway", "no": "Norge"}},
-           {"value": "http://sws.geonames.org/3137400/", "label": {"en": "Nord-Trøndelag", "no": "Nord-Trøndelag"}},
-           {"value": "http://sws.geonames.org/3137400/", "label": {"en": "Sør-Trøndelag", "no": "Sør-Trøndelag"}},
-           {"value": "http://sws.geonames.org/3132005/", "label": {"en": "Western Norway", "no": "Vestlandet"}},
-           {"value": "http://sws.geonames.org/3137468/", "label": {"en": "Southern Norway", "no": "Sørlandet"}},
-           {"value": "http://sws.geonames.org/3143185/", "label": {"en": "Eastern Norway", "no": "Østlandet"}}
+           {"value": "http://sws.geonames.org/3143188/", "label": {"en": "Østfold", "no": "Østfold"}},
+           {"value": "http://sws.geonames.org/3163480/", "label": {"en": "Akershus", "no": "Akershus"}},
+           {"value": "http://sws.geonames.org/3143242/", "label": {"en": "Oslo", "no": "Oslo"}},
+           {"value": "http://sws.geonames.org/3153403/", "label": {"en": "Hedmark", "no": "Hedmark"}},
+           {"value": "http://sws.geonames.org/3143487/", "label": {"en": "Oppland", "no": "Oppland"}}
+		   {"value": "http://sws.geonames.org/3159665/", "label": {"en": "Buskerud", "no": "Buskerud"}}
+		   {"value": "http://sws.geonames.org/3132015/", "label": {"en": "Vestfold", "no": "Vestfold"}}
+		   {"value": "http://sws.geonames.org/3134723/", "label": {"en": "Telemark", "no": "Telemark"}}
+		   {"value": "http://sws.geonames.org/3162354/", "label": {"en": "Aust-Agder", "no": "Aust-Agder"}}
+		   {"value": "http://sws.geonames.org/3132064/", "label": {"en": "Vest-Agder", "no": "Vest-Agder"}}
+		   {"value": "http://sws.geonames.org/3141558/", "label": {"en": "Rogaland", "no": "Rogaland"}}
+		   {"value": "http://sws.geonames.org/3151864/", "label": {"en": "Hordaland", "no": "Hordaland"}}
+		   {"value": "http://sws.geonames.org/3137966/", "label": {"en": "Sogn og Fjordane", "no": "Sogn og Fjordane"}}
+		   {"value": "http://sws.geonames.org/3145495/", "label": {"en": "Møre og Romsdal", "no": "Møre og Romsdal"}}
+		   {"value": "http://sws.geonames.org/11862827/", "label": {"en": "Trøndelag", "no": "Trøndelag"}}
+		   {"value": "http://sws.geonames.org/3144301/", "label": {"en": "Nordland", "no": "Nordland"}}
+		   {"value": "http://sws.geonames.org/3224359/", "label": {"en": "Troms Romsa", "no": "Troms Romsa"}}
+		   {"value": "http://sws.geonames.org/780166/", "label": {"en": "Finnmark Finnmárku", "no": "Finnmark Finnmárku"}}
            ],
       "help_text": {    "en": "Geographical area covered by the dataset",
                         "no": "Geografisk område dekket av datasettet"}
